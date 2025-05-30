@@ -1,4 +1,5 @@
 import java.util.*;
+
 class Solution {
     public int solution(String begin, String target, String[] words) {
         // 애초에 target이 words에 없으면 return 0
@@ -15,18 +16,18 @@ class Solution {
 
         //begin의 인접 리스트 생성
         for (String word : words) {
-            if (isOneCharDiff(word,begin)) {
+            if (isOneDiff(word,begin)) {
                 map.get(begin).add(word);
                 map.get(word).add(begin);
-            }    
+            }
         }
 
         for (String word : words) {
             for (String w : words) {
                 // 인접 리스트 생성
                 // 한 글자만 다르면 인접 리스트에 추가
-                // addList() : 1글자만 다를 때 1 반환 나머지 경우 0
-                if (isOneCharDiff(word,w)) {
+                // addList() : 1글자만 다를 때 true 반환, 나머지 경우 false
+                if (isOneDiff(word,w)) {
                     map.get(word).add(w);
                     map.get(w).add(word);
                 }
@@ -57,10 +58,10 @@ class Solution {
         }
         return 0;
     }
-    public static boolean isOneCharDiff(String word, String w) {
+    public static boolean isOneDiff(String word, String w) {
         String[] temp = word.split("");
         String[] tempW = w.split("");
-        // 같은 글자면 체크 안 하고 continue
+        // 같은 글자면 체크 안 하고 false
         if (word.equals(w)) return false;
 
         int count = 0;
@@ -69,7 +70,7 @@ class Solution {
         }
         // 인접 리스트 생성
         // 한 글자만 다르면 인접 리스트에 추가
-        // 1 반환
+        // true 반환
         if (count == word.length() - 1) return true;
 
         return false;

@@ -5,10 +5,18 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
+// bfs로 구현하였을 때, 시간초과 발생하여 dfs로 수정했고 통과함 !!!
 /*
     [BOJ-1325] 효율적인 해킹
 
-    bfs로 구현하였을 때, 시간초과 발생하여 dfs로 수정했고 통과함 !!!
+        "A가 B를 신뢰한다" == B -> A 간선이 존재한다.
+
+        그래프에서 연결된 노드의 개수가 가장 많은 특정 노드를 찾는 문제.
+
+        그래프의 모든 노드에서 DFS 순회를 하고, 이 때 방문한 노드의 수를 count한다.
+        노드의 갯수를 크기로 하는 int배열을 만들고, 여기에 각 노드에 대한 count값을 저장한다.
+
+        가장 큰 count값을 가지는 노드번호를 추출하고, 이를 오름차순 정렬하여 출력한다.
  */
 public class Main_DFS {
     public static int count = 0;

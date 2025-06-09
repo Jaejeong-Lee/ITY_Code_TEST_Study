@@ -88,7 +88,7 @@ Week00 문제 풀이 / {Github ID}
 | 7주차 | graph             | [BOJ-18352] 특정 거리의 도시 찾기 | [BOJ-1325] 효율적인 해킹          | [BOJ-1707] 이분 그래프             | [BOJ-2251] 물의 양 구하기             | X                                      | -                |
 | 8주차 | dfs               | [LC] number of islands            | [PGS] 응급차 최단거리             | [LC] shortest path in binary matrix | [PGS] 미로탈출                     | [PGS] 거리두기 확인하기               | [PGS] 보물지도   |
 | 9주차 | bfs               | [PGS] 네트워크                    | [LC] Keys and Rooms               | [PGS] 가장 먼 노드                | [LC] Coin Change                      | [LC] Is Graph Bipartite?              | [PGS] 단어변환   |
-| 10주차 | GreedyAlgorithm | -                                  | -                                  | -                                 | -                                      | -                                      | -                |
+| 10주차 | dfs/bfs 복습 | [PGS] 연속된 부분 수열의 합  | [PGS] 문자열 압축 | [LC] mine sweeper | [LC] Group Anagrams | [BOJ-2697] 숨바꼭질 | [BOJ-2206] 벽 부수고 이동하기 |
 | 11주차 | GreedyAlgorithm | -                                  | -                                  | -                                 | -                                      | -                                      | -                |
 | 12주차 | DynamicProgramming | -                               | -                                  | -                                 | -                                      | -                                      | -                |
 | 13주차 | DynamicProgramming | -                               | -                                  | -                                 | -                                      | -                                      | -                |
